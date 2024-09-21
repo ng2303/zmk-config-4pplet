@@ -23,14 +23,13 @@
 	&kp TAB		 &kp   Q   	&kp   W   	&kp   E   	&kp   R   &kp   T   &kp   Y   	&kp   U   	&kp   I   &kp   O   &kp   P   	&kp LBKT 	&kp RBKT	&kp BSLH
 	&kp CLCK 	 &kp   A   	&kp   S   	&kp   D   	&kp   F   &kp   G   &kp   H   	&kp   J   	&kp   K   &kp   L   &kp  SCLN  	&kp  QUOT   &none		&kp RET
 	&kp LSFT 	 &none		&kp   Z   	&kp   X   	&kp   C   &kp   V   &kp   B   	&kp   N   	&kp   M   &kp  CMMA &kp  DOT  	&kp  FSLH	&kp RSFT 	&mo FN1
-	&kp LCTL 	 &kp LALT   &kp   LGUI				&kp SPC			&kp SPC			&kp  SPC  			  &kp  SPC &kp FN1 	&mo RGUI	&kp RCTL		
+	&kp LCTL 	 &kp LALT   &kp   LGUI				&kp SPC			&kp SPC			&kp  SPC  			 &kp  FN1 &kp FN1 	&mo RGUI	&kp RCTL		
 	&kp C_PP
 			>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
-            // Function layer
 	    // Function layer
 	    // ------------------------------------------------------------------------------------------
 	    // |  V+  |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |INS | DEL|
