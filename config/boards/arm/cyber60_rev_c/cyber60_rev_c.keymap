@@ -16,14 +16,14 @@
 		// |  TAB |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
 		// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |none| ENTER   |
 		// | SHIFT |none| Z |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |    Shift   | FN |
-		// |  LCTL  |  LALT  |  LWIN  | SPACE  | SPACE |    SPACE   |  RALT |  FN  |  RGUI  | RCTRL |
+		// |  LCTL  |  LALT  |  LWIN  | SPACE  | SPACE |    SPACE   |  FN   |  FN  |  RGUI  | RCTRL |
 		// | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 	bindings = <
 	&gresc		 &kp NUM_1 	&kp NUM_2	&kp NUM_3 	&kp NUM_4 &kp NUM_5 &kp NUM_6 	&kp NUM_7 	&kp NUM_8 &kp NUM_9	&kp NUM_0	&kp MINUS	&kp EQL  	&none	&kp BKSP
 	&kp TAB		 &kp   Q   	&kp   W   	&kp   E   	&kp   R   &kp   T   &kp   Y   	&kp   U   	&kp   I   &kp   O   &kp   P   	&kp LBKT 	&kp RBKT	&kp BSLH
 	&kp CLCK 	 &kp   A   	&kp   S   	&kp   D   	&kp   F   &kp   G   &kp   H   	&kp   J   	&kp   K   &kp   L   &kp  SCLN  	&kp  QUOT   &none		&kp RET
 	&kp LSFT 	 &none		&kp   Z   	&kp   X   	&kp   C   &kp   V   &kp   B   	&kp   N   	&kp   M   &kp  CMMA &kp  DOT  	&kp  FSLH	&kp RSFT 	&mo FN1
-	&kp LCTL 	 &kp LALT   &kp   LGUI				&kp SPC			&kp SPC			&kp  SPC  			 &kp  FN1 &kp FN1 	&mo RGUI	&kp RCTL		
+	&kp LCTL 	 &kp LALT   &kp   LGUI				&kp SPC			&kp SPC			&kp  SPC  			 &mo FN1 &mo FN1 	&mo RGUI	&kp RCTL		
 	&kp C_PP
 			>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
