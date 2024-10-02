@@ -5,10 +5,6 @@
 
 #define FN1 1
 
-&soft_off {
-    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer.
-};
-
 / {
     behaviors {
         tilesc: grave_escape {
