@@ -5,6 +5,10 @@
 
 #define FN1 1
 
+&soft_off {
+    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer.
+};
+
 / {
     behaviors {
         tilesc: grave_escape {
@@ -44,7 +48,7 @@
 	    // Function layer
 	    // ------------------------------------------------------------------------------------------
 	    // |  V+  |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |INS | DEL|
-	    // |  V-  |BTPRV|  UP |BTNXT|TRNS |TRNS |TRNS | TRNS| MB1 | TRNS | MB2 | TRNS | TRNS | TRNS|
+	    // |  V-  |BTPRV|  UP |BTNXT|TRNS |TRNS |TRNS | TRNS| MB1 | TRNS | MB2 | TRNS | TRNS | flash|
             // | BT0  |LEFT |DOWN |RIGHT|TRNS |TRNS |TRNS | TRNS| TRNS |TRNS| TRNS |TRNS | TRNS | BTClear  |
             // | Bri+ |TRNS|TRNS|TRNS|TRNS | TRNS| TRNS | TRNS |  TRNS| TRNS | TRNS| TRNS |   TRNS   |TRNS|
             // |  Bri- | TRNS | TRNS |      TRNS      | TRNS |     TRNS     |  TRNS |  TRNS | TRNS | Off |
@@ -52,7 +56,7 @@
 
             bindings = <
 &kp C_VOL_UP  &kp F1    &kp F2           &kp F3           &kp F4           &kp F5           &kp F6           &kp F7           &kp F8           &kp F9          &kp F10   &kp F11  &kp F12  &trans      &kp DEL
-&kp C_VOL_DN  &bt BT_PRV    &kp UP       &bt BT_NXT       &trans           &trans           &trans           &trans           &trans           &trans          &trans    &trans   &trans   &trans
+&kp C_VOL_DN  &bt BT_PRV    &kp UP       &bt BT_NXT       &trans           &trans           &trans           &trans           &trans           &trans          &trans    &trans   &bootloader  
 &bt BT_SEL 0  &kp LEFT  &kp DOWN         &kp RIGHT        &trans           &trans           &trans           &trans           &trans           &trans          &trans    &trans   &trans   &bt BT_CLR
 &kp C_BRI_UP  &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans          &trans    &trans   &trans   &sys_reset
 &kp C_BRI_DN  &trans    &trans           &trans           &rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &soft_off
