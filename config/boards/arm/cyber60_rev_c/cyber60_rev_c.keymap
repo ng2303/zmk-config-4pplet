@@ -9,10 +9,6 @@
     hold-time-ms = <3000>; // Only turn off if the key is held for 3 seconds or longer.
 };
 
-&bootloader {
-    hold-time-ms = <5000>; // Only enter bootloader if the key is held for 5 seconds or longer.
-};
-
 / {
     behaviors {
         tilesc: grave_escape {
@@ -20,6 +16,12 @@
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp TILDE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&trans>, <&bootloader>;
         };
     };
 };
@@ -60,7 +62,7 @@
 
             bindings = <
 &kp C_VOL_UP  &kp F1    &kp F2           &kp F3           &kp F4           &kp F5           &kp F6           &kp F7           &kp F8           &kp F9          &kp F10   &kp F11  &kp F12  &trans      &kp DEL
-&kp C_VOL_DN  &bt BT_PRV    &kp UP       &bt BT_NXT       &trans           &trans           &trans           &trans           &trans           &trans          &trans    &trans   &trans   &bootloader
+&kp C_VOL_DN  &bt BT_PRV    &kp UP       &bt BT_NXT       &trans           &trans           &trans           &trans           &trans           &trans          &trans    &trans   &trans   &td0
 &bt BT_SEL 0  &kp LEFT  &kp DOWN         &kp RIGHT        &trans           &trans           &trans           &trans           &trans           &trans          &trans    &trans   &trans   &bt BT_CLR
 &kp C_BRI_UP  &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans          &trans    &trans   &trans   &sys_reset
 &kp C_BRI_DN  &trans    &trans           &trans           &rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &soft_off
