@@ -6,7 +6,11 @@
 #define FN1 1
 
 &soft_off {
-    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer.
+    hold-time-ms = <3000>; // Only turn off if the key is held for 3 seconds or longer.
+};
+
+&bootloader {
+    hold-time-ms = <5000>; // Only enter bootloader if the key is held for 5 seconds or longer.
 };
 
 / {
