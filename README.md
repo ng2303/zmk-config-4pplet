@@ -1,6 +1,15 @@
 # zmk-config-4pplet
 
-ZMK-config for the cyber60 60% PCB.
+ZMK-config for the cyber60 60% PCB, this is for my personal Blue Alps 60 percent board
+
+To remake if we need to sync more updates, main edits are (as of 9/21/26)
+ - Change the kconfig.deconfig for rev C to have name as Blue Alps
+ - Turn of sleep in rev c defconfig
+ - OBVIOUSLY copy over keymap
+
+Edits to restore lost function, and new ideas post sync
+ - To regain PWM, change it to okay instead of disabled in rev c overlay
+ - Trying to increase bt power by adding that new line in defconfig
 
 # Cyber60
 https://github.com/4pplet/cyber60
