@@ -72,8 +72,8 @@
 
             bindings = <
 &kp C_VOL_UP  &kp F1    &kp F2           &kp F3           &kp F4           &kp F5           &kp F6           &kp F7           &kp F8           &kp F9          &kp F10   &kp F11  &kp F12  &trans      &kp DEL
-&kp C_VOL_DN  &bt BT_PRV    &kp UP       &bt BT_NXT       &out OUT_TOG     &trans           &mkp LCLK        &mmv MOVE_UP     &mkp RCLK        &trans      &trans    &trans   &trans   &td0
-&bt BT_SEL 0  &kp LEFT  &kp DOWN         &kp RIGHT        &trans           &trans           &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans &trans    &trans   &kp KP_NLCK   &td1
+&kp C_VOL_DN  &bt BT_PRV    &kp UP       &bt BT_NXT       &out OUT_TOG     &trans           &trans           &mkp LCLK        &mmv MOVE_UP     &mkp RCLK       &trans    &trans   &trans   &td0
+&bt BT_SEL 0  &kp LEFT  &kp DOWN         &kp RIGHT        &trans           &trans           &trans           &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT &trans &trans    &trans   &kp KP_NLCK   &td1
 &kp C_BRI_UP  &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans         &trans    &trans   &studio_unlock   &trans
 &kp C_BRI_DN  &trans    &trans           &trans           &rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &trans
 &kp C_PP
