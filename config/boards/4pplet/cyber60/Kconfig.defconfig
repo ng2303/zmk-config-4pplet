@@ -4,7 +4,7 @@
 if BOARD_CYBER60
 
 config ZMK_KEYBOARD_NAME
-	default "Blue Alps"
+	default "NG03_Hotswap"
 
 if USB
 
