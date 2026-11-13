@@ -1,6 +1,6 @@
 # zmk-config-4pplet
 
-ZMK-config for the cyber60 60% PCB, this is for my personal Blue Alps 60 percent board
+ZMK-config for the cyber60 60% PCB, this is for my personal Cyber60 builds (Blue Alps C2, Hotswap MX E)
 
 To remake if we need to sync more updates, main edits are (as of 9/21/26)
  - Change the kconfig.deconfig for rev C to have name as Blue Alps
